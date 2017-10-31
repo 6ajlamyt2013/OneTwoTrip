@@ -1,0 +1,10 @@
+//тест на Selenium IDE, webDriver
+//тест написан на java
+
+public void Big_internet_test () {
+   wd.get("http://onetwotrip.com");
+    if(wd.getCurrentUrl().startsWith("https://www.onetwotrip.com/ru/#?deals_from=PEE&deals_to=ANYWHERE&deals_when=CHEAPEST&deals_stay=ANY_STAY")) 
+     System.out.println("Success");
+       else
+     System.out.println("Failure");
+}
